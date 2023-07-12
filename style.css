@@ -446,17 +446,32 @@ h3.heading__conversion>span:last-of-type , h3.heading__underline{
 
 .card__row{
   width: 80%;
-  padding: 4rem 2rem;
   margin-inline: auto;
-  background: var(--primary-color);
-
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 3rem;
 }
 
 .card__column > .heading__underline {
  font-size: 2rem; 
+ font-weight: 900;
  margin-inline: auto;
  padding-inline: 2rem;
- width: fit-content;
+ width: 100%;
+ text-align: center;
+}
+
+.card__column > p {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.card__column{
+  background: var(--primary-color);
+  flex-grow: 1;
+  width: calc(100% / 2 - 30px);
+  padding: 4rem 2rem;
+
 }
 
 
